@@ -41,7 +41,7 @@ public class TextReplace {
     }
 
     public String replaceWords(String data, Map<String, String> map) {
-        HashMap<String, Integer> wordCount = new HashMap<>();
+        Map<String, Integer> wordCount = new HashMap<>();
         for (Map.Entry<String, String> entry : map.entrySet()) {
             if (data.contains(entry.getKey())) {
                 int occurrences = data.split(entry.getKey()).length - 1;
